@@ -93,7 +93,7 @@ def main():
         mus_type=[".mp3",".ogg",".wav",".amr"]
         arc_type=[".zip",".gz",".tar"] #NO RAR TYPE FILES
         
-        
+        #Если заменить внешний PATH_TO_UNSORTED на передаваемый PATH - при вызове рекурсии он будет работать внутри своих директорий.
         pic_dir=Path(PATH_TO_UNSORTED.joinpath("pictures"))
         vid_dir=Path(PATH_TO_UNSORTED.joinpath("video"))
         doc_dir=Path(PATH_TO_UNSORTED.joinpath("documents"))
